@@ -1,0 +1,108 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Sen", sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 5fr;
+    height: 100%;
+}
+
+.sidebar {
+    grid-row: 1 / 6;
+    grid-column: 1 / 2;
+    background-color: #0096FF;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sidebar div {
+    margin-left: 20%;
+}
+
+.header {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(10, 1fr);
+    align-items: center;
+}
+
+.form-container {
+    grid-column: 1 / 6;
+}
+
+.form-container input[type="search"] {
+    margin-left: 15%;
+    height: 30px;
+    width: 70%;
+    border-radius: 20px;
+    border: none;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.1);
+    background-color: #e9e9e9;
+    align-self: center;
+}
+
+.header > .notification {
+    width: 25px;
+    height: 25px;
+    grid-column: 8;
+}
+
+.header > .profileIcon {
+    width: 50px;
+    height: 50px;
+}
+
+.header >.top-right-name {
+    margin-left: -50%;
+}
+
+.main-content {
+    grid-row: 2 / 6;
+    grid-column: 2 / 3;
+    background-color: lightgray;
+}
+
+button {
+    background-color: #0096FF;
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+
+button.submit-button {
+    
+}
+
+.newButton {
+    grid-column: 7;
+    width: 70%;
+    height: 40%;
+    justify-self: center;
+}
+
+.uploadButton {
+    grid-column: 8;
+    width: 70%;
+    height: 40%;
+    justify-self: center;
+}
+
+.shareButton {
+    grid-column: 9;
+    width: 70%;
+    height: 40%;
+    justify-self: center;
+}
+
+h4 {
+    grid-column: 2;
+}

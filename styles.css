@@ -54,9 +54,10 @@ html, body {
     width: 25px;
     height: 25px;
     grid-column: 8;
+    margin-left: 55%;
 }
 
-.header > .profileIcon {
+.header > .profile-icon {
     width: 50px;
     height: 50px;
 }
@@ -68,7 +69,11 @@ html, body {
 .main-content {
     grid-row: 2 / 6;
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 4fr 4fr 1fr;
     background-color: lightgray;
+    overflow-y: auto;
 }
 
 button {
@@ -78,8 +83,19 @@ button {
     border: none;
 }
 
-button.submit-button {
-    
+.second-profile-icon {
+    width: 75px;
+    height: 75px;
+    margin-left: 35%;
+}
+
+h2 {
+    margin-top: -10%;
+}
+
+.last-name {
+    margin-top: 29%;
+    margin-left: -55%;
 }
 
 .newButton {
@@ -105,4 +121,83 @@ button.submit-button {
 
 h4 {
     grid-column: 2;
+}
+
+.main-content h3 {
+    margin-left: 5%;
+}
+
+.main-content .announcements {
+    grid-column: 3;
+}
+
+.card {
+    border-left: 8px solid #FFD700;
+    background-color: white;
+    margin: 5%;
+    border-radius: 10px;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-left: 5%;
+    margin-top: 7%
+}
+
+.card p {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.icon-grid {
+    margin-bottom: -25%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.icon-grid img {
+    width: 25px;
+    height: 25px;
+}
+
+.first-icon {
+    grid-column: 6;
+}
+
+.second-icon {
+    grid-column: 7;
+}
+
+.third-icon {
+    grid-column: 8;
+}
+
+.announce-content {
+    grid-column: 3;
+    grid-row: 2 / 4;
+    background-color: white;
+    border-radius: 10px;
+    margin: 5%;
+    margin-bottom: 20%;
+}
+
+.announce-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5%;
+}
+
+.announce-flex p {
+    margin-top: -5%;
+    margin-bottom: 5%;
+}
+
+.announce-flex .underline {
+    border-bottom: 2px solid lightgray;
+}
+
+.trending-title {
+    margin-top: -20%;
 }

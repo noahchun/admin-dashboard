@@ -62,7 +62,6 @@ html, body {
 }
 
 .form-container input[type="search"] {
-    margin-left: 15%;
     height: 30px;
     width: 70%;
     border-radius: 20px;
@@ -70,6 +69,23 @@ html, body {
     box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.1);
     background-color: #e9e9e9;
     align-self: center;
+    margin-top: -5%;
+}
+
+.form-container button[type="submit"] {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 10%;
+}
+
+.form-container .submit-button img {
+    width: 25px;
+    height: 25px;
+}
+
+.submit-button-container {
+    margin-top: 5%;
 }
 
 .header > .notification {
@@ -300,5 +316,13 @@ h4 {
 .trending-grid .third-trend-text,
 .trending-grid .fourth-trend-text {
     grid-column: 2 / 3;
-    margin-top: 5%; 
+    align-self: center;
+    margin-top: 5%;
+}
+
+.trending-grid .first-trend-pic,
+.trending-grid .second-trend-pic,
+.trending-grid .third-trend-pic,
+.trending-grid .fourth-trend-pic {
+    align-self: center;
 }
